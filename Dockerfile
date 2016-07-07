@@ -71,4 +71,4 @@ EXPOSE 8021/tcp
 EXPOSE 64535-65535/udp
 
 # Start the container.
-CMD service snmpd start && service freeswitch start && tail -f /usr/local/freeswitch/log/freeswitch.log
+CMD ./freeswitch -nf
