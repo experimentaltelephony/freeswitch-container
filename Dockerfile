@@ -4,10 +4,10 @@ FROM ubuntu:16.04
 MAINTAINER Charlie Wolf <charlie.wolf@experimentaltelephony.com>
 
 # Enable the Ubuntu multiverse repository.
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse" >> /etc/apt/source.list
-RUN echo "deb-src http://us.archive.ubuntu.com/ubuntu/ xenial multiverse">> /etc/apt/source.list
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse" >> /etc/apt/source.list
-RUN echo "deb-src http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse" >> /etc/apt/source.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ vivid multiverse" >> /etc/apt/source.list
+RUN echo "deb-src http://us.archive.ubuntu.com/ubuntu/ vivid multiverse">> /etc/apt/source.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ vivid-updates multiverse" >> /etc/apt/source.list
+RUN echo "deb-src http://us.archive.ubuntu.com/ubuntu/ vivid-updates multiverse" >> /etc/apt/source.list
 # Enable videolan stable repository.
 RUN apt-get update && apt-get install -y software-properties-common
 RUN add-apt-repository ppa:videolan/stable-daily
